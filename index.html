@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raza Bookstore</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* {margin:0; padding:0; box-sizing:border-box;}
+body {font-family:'Inter',sans-serif; background:#f5f5f5; color:#222; overflow-x:hidden;}
+header {background:#1a1a2e; color:#fff; padding:40px 20px; text-align:center; position:relative;}
+header img {width:140px; height:140px; border-radius:50%; margin-bottom:15px; transition:transform 0.3s;}
+header img:hover {transform:scale(1.1);}
+header h1 {font-size:2.8em; margin-bottom:10px;}
+header p {opacity:0.8; font-size:1.2em;}
+
+/* Hero Section */
+.hero {display:flex; flex-wrap:wrap; justify-content:center; align-items:center; background:#fff; margin:20px auto; padding:40px 20px; border-radius:20px; max-width:1200px; box-shadow:0 8px 20px rgba(0,0,0,0.1);}
+.hero img {width:350px; border-radius:20px; margin:10px;}
+.hero-content {flex:1; min-width:300px; padding:20px;}
+.hero-content h2 {font-size:2.5em; margin-bottom:20px;}
+.hero-content p {font-size:1.2em; margin-bottom:30px; color:#555;}
+.hero-content a {padding:15px 30px; background:#ff6f61; color:#fff; text-decoration:none; border-radius:12px; font-weight:600; transition:transform 0.2s, box-shadow 0.3s;}
+.hero-content a:hover {transform:scale(1.05); box-shadow:0 8px 16px rgba(0,0,0,0.2);}
+
+/* Quick Links Bar */
+.quick-links {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin:30px auto;
+    max-width:1000px;
+}
+.quick-links a {
+    padding:12px 25px;
+    background:#1a1a2e;
+    color:#fff;
+    text-decoration:none;
+    border-radius:20px;
+    font-weight:600;
+    transition: transform 0.2s, background 0.3s;
+}
+.quick-links a:hover {
+    transform:scale(1.05);
+    background:#ff6f61;
+}
+
+/* Featured Books */
+.featured {max-width:1200px; margin:40px auto; padding:20px;}
+.featured h3 {font-size:2em; margin-bottom:20px; text-align:center;}
+.books-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:20px;}
+.book-card {background:#fff; border-radius:15px; padding:15px; box-shadow:0 6px 16px rgba(0,0,0,0.1); transition:transform 0.3s, box-shadow 0.3s;}
+.book-card:hover {transform:translateY(-5px); box-shadow:0 10px 20px rgba(0,0,0,0.2);}
+.book-card img {width:100%; border-radius:10px; margin-bottom:10px;}
+.book-card h4 {margin-bottom:5px; font-size:1.1em;}
+.book-card p {font-weight:600; color:#ff6f61; margin-bottom:10px;}
+.book-card a {padding:8px 15px; background:#1a1a2e; color:#fff; text-decoration:none; border-radius:10px; font-size:0.9em; transition:transform 0.2s;}
+.book-card a:hover {transform:scale(1.05); background:#ff3f2f;}
+
+/* Footer */
+footer {background:#1a1a2e; color:#fff; text-align:center; padding:30px 20px; margin-top:40px; font-weight:500;}
+</style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Raza Logo">
+    <h1>Raza Bookstore</h1>
+    <p>Discover your next favorite book 📚</p>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <img src="image.png" alt="Books Hero Image">
+    <div class="hero-content">
+        <h2>Welcome to Raza Bookstore</h2>
+        <p>Browse our curated collection of books from bestsellers to hidden gems. Find the perfect read for every mood.</p>
+        <a href="books.html">Shop Books</a>
+    </div>
+</section>
+
+<!-- Quick Links Bar -->
+<div class="quick-links">
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="location.html">Locations</a>
+    <a href="mission.html">Our Mission</a>
+</div>
+
+<!-- Featured Books -->
+<section class="featured">
+    <h3>Featured Books</h3>
+    <div class="books-grid">
+        <div class="book-card">
+            <img src="great.png" alt="Book 1">
+            <h4>The Great Adventure</h4>
+            <p>$14.99</p>
+            <a href="#">Add to Cart</a>
+        </div>
+        <div class="book-card">
+            <img src="css.png" alt="Book 2">
+            <h4>Learning CSS</h4>
+            <p>$19.99</p>
+            <a href="#">Add to Cart</a>
+        </div>
+        <div class="book-card">
+            <img src="my.png" alt="Book 3">
+            <h4>Mystery of the Night</h4>
+            <p>$9.99</p>
+            <a href="#">Add to Cart</a>
+        </div>
+        <div class="book-card">
+            <img src="sc.png" alt="Book 4">
+            <h4>History of Science</h4>
+            <p>$24.99</p>
+            <a href="#">Add to Cart</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Raza Bookstore</p>
+</footer>
+
+</body>
+</html>
